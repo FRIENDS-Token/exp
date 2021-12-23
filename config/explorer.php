@@ -11,13 +11,13 @@ return [
 
     'market_data_provider_service' => env('EXPLORER_MARKET_DATA_PROVIDER_SERVICE', CoinGecko::class),
 
-    'networks' => [
+  'networks' => [
         'production' => [
-            'name'             => env('EXPLORER_NETWORK_NAME', 'ARK Public Network'),
+            'name'             => env('EXPLORER_NETWORK_NAME', 'STB Public Network'),
             'alias'            => env('EXPLORER_NETWORK_ALIAS', 'mainnet'),
-            'api'              => env('EXPLORER_NETWORK_API', 'https://wallets.ark.io/api'),
-            'currency'         => env('EXPLORER_NETWORK_CURRENCY', 'ARK'),
-            'currencySymbol'   => env('EXPLORER_NETWORK_CURRENCY_SYMBOL', 'Ѧ'),
+            'api'              => env('EXPLORER_NETWORK_API', '127.0.0.1:53472'),
+            'currency'         => env('EXPLORER_NETWORK_CURRENCY', 'STB'),
+            'currencySymbol'   => env('EXPLORER_NETWORK_CURRENCY_SYMBOL', 'STB'),
             'confirmations'    => intval(env('EXPLORER_NETWORK_CONFIRMATIONS', 51)),
             'knownWallets'     => env('EXPLORER_NETWORK_KNOWN_WALLETS', 'https://raw.githubusercontent.com/ArkEcosystem/common/master/mainnet/known-wallets-extended.json'),
             'canBeExchanged'   => env('EXPLORER_NETWORK_CAN_BE_EXCHANGED', true),
