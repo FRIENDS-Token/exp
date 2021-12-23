@@ -6,11 +6,11 @@ namespace App\Providers;
 
 use App\Contracts\MarketDataProvider;
 use App\Services\BigNumber;
+use ARKEcosystem\Foundation\DataBags\DataBag;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\ServiceProvider;
-use ARKEcosystem\UserInterface\DataBags\DataBag;
 
 final class AppServiceProvider extends ServiceProvider
 {
@@ -65,16 +65,16 @@ final class AppServiceProvider extends ServiceProvider
     {
         DataBag::register('metatags', [
             'delegates' => [
-                'title'       => 'Delegate Monitor | ARK Explorer | Cryptocurrency Block Explorer',
-                'description' => 'Monitor Delegate activity for the ARK Public Network. See Delegate rankings and track Voting Power in the ARK Blockchain.',
+                'title'       => 'Delegate Monitor | STB Explorer | Cryptocurrency Block Explorer',
+                'description' => 'Monitor Delegate activity for the STB Public Network. See Delegate rankings and track Voting Power in the STB Blockchain.',
             ],
             'wallets' => [
-                'title'       => 'Wallet Addresses | ARK Explorer | Cryptocurrency Block Explorer',
-                'description' => 'See wallet addresses on the ARK Explorer. Track balances and see transaction activity for wallet addresses on the ARK Public Nework',
+                'title'       => 'Wallet Addresses | STB Explorer | Cryptocurrency Block Explorer',
+                'description' => 'See wallet addresses on the STB Explorer. Track balances and see transaction activity for wallet addresses on the STB Public Nework',
             ],
             '*' => [
-                'title'       => 'ARK Explorer | Cryptocurrency Block Explorer',
-                'description' => 'View cryptocurrency transactions and track cryptocurrency balances. A simple block explorer to monitor Blockchain activity on the ARK Public Network.',
+                'title'       => 'STB Explorer | Cryptocurrency Block Explorer',
+                'description' => 'View cryptocurrency transactions and track cryptocurrency balances. A simple block explorer to monitor Blockchain activity on the STB Public Network.',
             ],
         ]);
     }
