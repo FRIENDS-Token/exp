@@ -29,11 +29,11 @@ it('should have all required properties', function (array $config) {
     expect($subject->config())->toBeInstanceOf(Bitwasp::class);
 })->with([
     [[
-        'name'             => 'ARK Public Network',
+        'name'             => 'STB Public Network',
         'alias'            => 'mainnet',
-        'currency'         => 'ARK',
-        'api'              => 'https://wallets.ark.io/api',
-        'currencySymbol'   => 'Ѧ',
+        'currency'         => 'STB',
+        'api'              => '127.0.0.1:53472',
+        'currencySymbol'   => 'STB',
         'confirmations'    => 51,
         'knownWallets'     => 'https://raw.githubusercontent.com/ArkEcosystem/common/master/mainnet/known-wallets-extended.json',
         'canBeExchanged'   => true,
@@ -41,7 +41,7 @@ it('should have all required properties', function (array $config) {
         'delegateCount'    => 51,
         'blockTime'        => 8,
         'blockReward'      => 2,
-        'base58Prefix'     => 23,
+        'base58Prefix'     => 20,
     ]],
     [[
         'name'             => 'ARK Development Network',
